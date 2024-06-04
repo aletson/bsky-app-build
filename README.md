@@ -1,6 +1,6 @@
 # bsky-app-build
 
-bash script
+bash script. replaces "post" with "skeet" in the bluesky app and then builds the apk and uploads it to an s3 bucket.
 
 tested on windows but you dont need windows that's just what was handy for me
 
