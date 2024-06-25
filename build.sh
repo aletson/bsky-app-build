@@ -8,6 +8,7 @@ sed -Ei 's/(msgid ".*post.*"\r\nmsgstr ".*)(post)(.*")/\1skeet\3/' src/locale/lo
 sed -Ei 's/(msgid ".*post.*"\r\nmsgstr ".*)(post)(.*")/\1skeet\3/' src/locale/locales/en/messages.po # Runs twice to catch second instance in one line
 sed -Ei 's/(msgid ".*Post.*"\r\nmsgstr ".*)(Post)(.*")/\1Skeet\3/' src/locale/locales/en/messages.po # now with capital letters
 sed -Ei 's/(msgid ".*Post.*"\r\nmsgstr ".*)(Post)(.*")/\1Skeet\3/' src/locale/locales/en/messages.po
+yarn update
 npx expo prebuild
 yarn intl:build
 cd android
