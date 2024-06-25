@@ -14,3 +14,4 @@ yarn intl:build
 cd android
 ./gradlew assembleRelease
 aws s3api put-object --bucket your-bucket --key bsky.apk --body app/release/app-release.apk
+aws cloudfront create-invalidation --distribution-id your-distribution --paths "/bsky.apk"
